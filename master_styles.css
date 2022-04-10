@@ -1,0 +1,242 @@
+/*Keep the header and footer at the edges of the page*/
+html, body {
+  margin: 0;
+}
+
+/* Header/navigation bar */
+.header {
+
+  overflow: hidden;
+  background-color: black;
+
+}
+
+.nav {
+  font-weight: bold;
+  background-color: grey;
+  width: 100%;
+  padding: 15px;
+}
+
+.nav ul {
+  color: black;
+  padding: 12px;
+  padding-bottom: 14px;
+  text-decoration: none;
+  line-height: 25px;
+  white-space: nowrap;
+  display: inline;
+  color: white;
+  list-style-type: none;
+  font-size: 3vh;
+
+
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav li {
+ margin-left: 5%;
+ display:inline;
+ font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.nav p {
+  color: yellow;
+}
+
+
+/*Flexbox */
+.content-flex {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: grey;
+  align-items:stretch;
+
+}
+
+.content-item-stretch {
+display: inline-block;
+  flex: 100%;
+  text-align: center;
+  padding: 5%;
+  background-color: #CECDCD;
+}
+
+.content-item-stretch h2 {
+
+}
+
+.content-item-stretch p{
+
+  font-weight: 500;
+}
+
+.content-item-left {
+  flex: 35%;
+  text-align: center;
+  padding: 3%;
+  background-color: #4E4D4D;
+  color: white;
+
+}
+
+.content-item-left a {
+  background-color: black;
+  width: 500px;
+  font-size: 30pt;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, sans-serif;
+  border: solid 2px black;
+}
+
+.content-item-left p{
+  font-weight: 500;
+}
+
+.content-item-right {
+  flex: 35%;
+  /*height: 100px;*/
+  text-align: center;
+  padding: 3%;
+}
+
+.content-item-right p {
+  font-weight: 500;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+
+  font-size: 3vh;
+  font-family:  Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+h1 {
+  margin-left: 5%;
+  font-size: 5vh;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.regular h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.regular p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+h2 {
+
+  font-size: 2.1em;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* CSS for the button */
+.content-flex a {
+  background-color: black;
+  width: 500px;
+  font-size: 20pt;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, sans-serif;
+  border: solid 2px black;
+  padding: 10px;
+}
+
+/* Media rule stuff */
+@media screen and (orientation: portrait){
+
+.content-flex {
+  flex-direction: column;
+  margin: 0;
+}
+
+
+.header li {
+
+  float: none;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*text-align: left;*/
+}
+
+
+.read-more {
+  width: 300px;
+}
+
+
+.footer p {
+  margin: 20px;
+  padding-bottom: 10px;
+  font-size: 2vw;
+}
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 750px) {
+  .content-flex {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .read-more {
+    width: 300px;
+  }
+
+  p {
+    font-size: 18pt;
+  }
+
+  a {
+    font-size: 18pt;
+  }
+
+}
+
+
+
+/* Footer */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  text-align:center;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+
+}
+
+.footer p {
+  margin: 20px;
+  padding-bottom: 10px;
+  font-size: 3vh;
+}
