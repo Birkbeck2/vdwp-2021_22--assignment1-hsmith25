@@ -73,7 +73,7 @@ push ();
   translate (width/2, height/2);
 
 
-for (let i=1; i<4000; i++){
+for (let i=1; i<400; i++){
   let expand = i*frameCount/10;
   circle(0,0, random(expand), random(displayWidth));
 
