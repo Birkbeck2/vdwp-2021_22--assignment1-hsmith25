@@ -29,7 +29,7 @@ background(random(255), random(255), random(255));
 
   pos = createVector(x, y);
   prev = pos.copy();
-  frameRate (8);
+  frameRate (18);
   osc = new p5.TriOsc();
   osc.start();
   osc.amp(0);
